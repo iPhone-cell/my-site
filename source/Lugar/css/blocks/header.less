@@ -1,0 +1,122 @@
+// main: ../style.less
+
+.header {
+    padding: 2.93rem 0 6rem;
+    width: 100%;
+    max-width: 1240px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media @mobile {
+        background: @blue;
+        padding-bottom: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.header__logo {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: @dark;
+}
+
+.header__burger {
+    display: none;
+    @media @mobile {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        border: none;
+        background: 0;
+        border: 0;
+        &:before,
+        &:after {
+            content: '';
+            background-color: @dark;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        }
+        span {
+            position: absolute;
+            background-color: @dark;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+        }
+        &:before {
+            top: 0;
+
+        }
+        &:after {
+            bottom: 0;
+        }
+    }
+}
+
+.header__nav {
+    @media @mobile {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 1rem;
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        z-index: 1000;
+        text-align: center;
+        background: @blue;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+        &.show {
+            display: flex;
+        }
+    }
+}
+
+.header__nav a {
+    position: relative;
+    margin-left: 75px;
+    font-size: 0.93rem;
+    text-transform: uppercase;
+    color: @dark;
+
+    &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: @dark;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+
+    @media @mobile {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.5rem 1rem;
+    }
+}

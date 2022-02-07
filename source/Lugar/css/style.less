@@ -1,0 +1,66 @@
+// compress: true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    color: @dark;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 120%;
+    @media @mobile {
+        font-size: 30px;
+    }
+    @media @small {
+        font-size: 24px;
+    }
+}
+
+p {
+    color: @gray;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+// Blocks 
+@import "blocks/container";
+@import  "blocks/intro-wrapper";
+@import "blocks/btn";
+@import "blocks/header";
+@import  "blocks/intro";
+@import  "blocks/award";
+@import  "blocks/projects";
+@import  "blocks/reviews";
+@import  "blocks/form";
+@import  "blocks/footer";
+
+// Helpers
+@import  "blocks/helpers";

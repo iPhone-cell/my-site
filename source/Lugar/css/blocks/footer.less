@@ -1,0 +1,109 @@
+// main: ../style.less
+
+.footer {
+    padding: 90px 0 45px;
+    background: @dark;
+
+    a {
+    font-size: 0.93rem;
+    color: @gray;
+        
+    &:hover {
+        color: @white;
+    }
+    }
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    @media @large {
+        flex-direction: column;
+    }
+}
+
+.footer__left {
+    width: 160px;
+    @media @large {
+        margin-bottom: 2rem;
+    }
+}
+
+.footer__logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: @white;
+}
+
+.footer__address {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.93rem;
+    color: @gray;
+    transition: all 0.3s ease;
+    margin: 12px 0;
+    display: flex;
+    align-items: flex-start;
+    width: 160px;
+    line-height: 1.2;
+
+    &:hover {
+        color: @white;
+    }
+
+    img {
+        margin-right: 8px;
+        padding-top: 2px;
+    }
+}
+
+.footer__phone, .footer__email {
+    display: block;
+
+    img {
+        margin-right: 8px;
+    }
+}
+
+.footer__email{
+    margin: 12px 0;
+}
+
+.footer__right {
+    display: flex;
+    @media @large {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.footer__nav-item {
+    margin-right: 75px;
+    width: 150px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer__subtitle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: @white;
+    margin-bottom: 12px;
+}
+
+.footer__nav {
+    a {
+        display: block;
+        margin-bottom: 12px;
+    }
+}
+
+.footer__copyright {
+    font-size: 0.8rem;
+    color: @gray;
+    margin-top: 95px;
+}

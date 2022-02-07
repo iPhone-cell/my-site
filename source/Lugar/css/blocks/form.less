@@ -1,0 +1,95 @@
+// main: ../style.less
+
+.form {
+    padding: 100px 0;
+}
+
+.form__inner {
+    display: flex;
+
+    > .img {
+        margin-right: 8.33rem;
+        @media @large {
+            margin-right: 1rem;
+        }
+        @media @tablet {
+            margin-bottom: 2rem;
+        }
+    }
+    @media @tablet {
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.form__offer {
+    width: 100%;
+    max-width: 540px;
+
+    > p {
+        margin: 12px 0 40px;
+    }
+}
+
+.form form {
+
+    div {
+        display: flex;
+        flex-wrap: nowrap;
+        @media @mobile {
+            flex-wrap: wrap;
+        }
+
+        input {
+            margin-right: 2rem;
+            margin-bottom: 1.2rem;
+            width: 255px;
+            height: 50px;
+            background: @white;
+            border: 1px solid @dark;
+            padding-left: 1.2rem;
+            color: @dark;
+            font-size: 1.2rem;
+
+            &[placeholder] {
+                opacity: 0.5;
+
+                &:focus {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 540px;
+        height: 120px;
+        background: @white;
+        border: 1px solid @dark;
+        padding-left: 1.2rem;
+        padding-top: 0.93rem;
+        color: @dark;
+        font-size: 1.2rem;
+
+        &[placeholder] {
+            opacity: 0.5;
+
+            &:focus {
+                opacity: 1;
+            }
+        }
+        @media @mobile {
+            width: 90%;
+        }
+    }
+
+    button {
+        margin-top: 40px;
+    }
+
+}
+
+
+

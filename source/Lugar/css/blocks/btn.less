@@ -1,0 +1,40 @@
+// main: ../style.less
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.2rem 1.6rem;
+    line-height: 1.12;
+    border: 0;
+    background: @dark;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.93rem;
+    color: @white;
+    text-decoration: none;
+    border: 1px solid @dark;
+    text-align: center;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: @white;
+        color: @dark;
+    }
+
+    + .btn {
+        margin-left: 2rem;
+    }
+}
+
+.intro__btn-opacity {
+    background-color: @white;
+    color: @dark;
+
+    &:hover {
+        background: @dark;
+        color: @white;
+    }
+}

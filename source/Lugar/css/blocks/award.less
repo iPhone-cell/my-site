@@ -1,0 +1,47 @@
+// main: ../style.less
+
+.award {
+    padding: 150px 0;
+    
+}
+
+.award__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media @large {
+        justify-content: inherit;
+    }
+    @media @mobile {
+        flex-wrap: wrap;
+    }
+    .img {
+        margin-bottom: 2rem;
+    }
+}
+
+.award__offer {
+    width: 100%;
+    max-width: 540px;
+}
+
+.award__offer p {
+    margin: 40px 0;
+}
+
+.award__statistics {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: @blue;
+        margin-bottom: 8px;
+    }
+
+    div {
+        font-weight: 300;
+        font-size: 48px;
+    }
+}
