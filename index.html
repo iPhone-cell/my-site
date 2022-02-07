@@ -1,68 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Портфолио Junior верстальщика</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
 
-  <body>
-    <header class="page-header">
-      <div class="container">
-        Контакты в шапке
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="style.css">
+	<title>Портфолио Junior верстальщика</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic"
+		rel="stylesheet">
+</head>
 
-      <section class="hero-image">
-        <div class="container">
-          <h1 class="heading">Илья</h1>
-          <p>Junior верстальщик</p>
-        </div>
-      </section>
-  
-      <section class="intro">
-        <div class="container">
-          <h2 class="subheading">Давайте познакомимся</h2>
-          <figure class="user-image">
-            <img src="files/user.jpg" width="928" height="536" alt="Фотография Неопознанного Енота">
-          </figure>
-          <h3>Пара слов о себе</h3>
-          <p>Люблю ходить в KFC</p>
-          <h3>Чем могу быть полезен</h3>
-          <p>Сделаю верстку сайта быстро и качественно</p>
-          <div class="skills">
-            <h3>Мои навыки</h3>
-            <dl class="skills-list">
-              <dt class="skill-html">HTML</dt>
-              <dd class="level"><div style="width: 60%">60%</div></dd>
-              <dt class="skill-css">CSS</dt>
-              <dd class="level"><div style="width: 40%">40%</div></dd>
-            </dl>
-          </div>
-        </div>
-      </section>
-  
-      <section class="portfolio">
-        <div class="container">
-          <h2 class="subheading">Мои работы</h2>
-          <figure class="project-image">
-            <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">
-          </figure>
-          <a class="button" href="source/project-gloevk/index.html">Открыть страницу</a>
-  
-          <h3>Магазин товаров для дома</h3>
-          <p>Мой первый сайт.</p>
-    
-          <h3>Блог начинающего верстальщика</h3>
-          <p>Статический блог про обучение HTML и CSS.</p>
-        </div>
-      </section>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<a href="mailto:ilvlagad@gmail.com" class="header-email">ilvlagad@gmail.com</a>
+			<a href="tel:+79043576185" class="header-phone">+79043576185</a>
+		</div>
+	</header>
 
-    <footer class="page-footer">
-      <div class="container">
-        Контакты в подвале
-      </div>
-    </footer>
-  </body>
+	<section class="hero-image">
+		<div class="container">
+			<h1 class="heading">Илья Гадалин</h1>
+			<p>Веб-верстальщик</p>
+		</div>
+	</section>
+
+	<section class="intro">
+		<div class="container">
+			<h2 class="subheading">Давайте познакомимся</h2>
+			<figure class="user-image">
+				<img src="files/photo.jpg" width="928" height="536" alt="Фотография Неопознанного Енота">
+			</figure>
+			<div class="about">
+				<h3>Пара слов о себе</h3>
+				<p>Занимаюсь веб-разработкой с 2019 года. Люблю своё дело и постоянно его совершенствую. Увлекаюсь
+					музыкой и
+					фитнесом
+				</p>
+				<h3>Чем могу быть полезен</h3>
+				<p>Сделаю верстку сайта быстро и качественно</p>
+			</div>
+			<div class="skills">
+				<h3>Мои основные навыки</h3>
+				<dl class="skills-list">
+					<dt class="skill-html">HTML</dt>
+					<dt class="skill-css">CSS (SCSS)</dt>
+					<dt class="skill-gulp">Gulp</dt>
+					<dt class="skill-js">Основы JavaScript</dt>
+				</dl>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio">
+		<div class="container">
+			<h2 class="subheading">Мои работы</h2>
+			<div class="portfolio-flex">
+				<div class="portfolio-item">
+					<figure class="project-image">
+						<a target="_blank" href="source/Explore and Travel/index.html">
+							<img src="files/project-1.png" width="928" height="536" alt="">
+						</a>
+					</figure>
+					<h3>Лендинг Explore and Travel</h3>
+					<a target="_blank" class="button" href="source/Explore and Travel/index.html">Открыть страницу</a>
+				</div>
+
+				<div class="portfolio-item">
+					<figure class="project-image">
+						<a target="_blank" href="source/ItAgency/index.html">
+							<img src="files/project-2.png" width="928" height="536" alt="">
+						</a>
+					</figure>
+					<h3>Лендинг ItAgency</h3>
+					<a target="_blank" class="button" href="source/ItAgency/index.html">Открыть страницу</a>
+				</div>
+
+				<div class="portfolio-item">
+					<figure class="project-image">
+						<a target="_blank" href="source/Logoipsim/layout/index.html">
+							<img src="files/project-3.png" width="928" height="536" alt="">
+						</a>
+					</figure>
+					<h3>Лендинг Logoipsum</h3>
+					<a target="_blank" class="button" href="source/Logoipsim/layout/index.html">Открыть страницу</a>
+				</div>
+
+				<div class="portfolio-item">
+					<figure class="project-image">
+						<a target="_blank" href="source/Lugar/index.html">
+							<img src="files/project-4.png" width="928" height="536" alt="">
+						</a>
+					</figure>
+					<h3>Лендинг Lugar</h3>
+					<a target="_blank" class="button" href="source/Lugar/index.html">Открыть страницу</a>
+				</div>
+
+				<div class="portfolio-item">
+					<figure class="project-image">
+						<a target="_blank" href="source/Storelink/index.html">
+							<img src="files/project-5.png" width="928" height="536" alt="">
+						</a>
+					</figure>
+					<h3>Интернет-магазин Storelink</h3>
+					<a target="_blank" class="button" href="source/Storelink/index.html">Открыть страницу</a>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="page-footer">
+		<div class="container">
+			<a href="mailto:ilvlagad@gmail.com" class="footer-email">ilvlagad@gmail.com</a>
+			<a href="tel:+79043576185" class="header-phone">+79043576185</a>
+		</div>
+	</footer>
+</body>
+
 </html>
