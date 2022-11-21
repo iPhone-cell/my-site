@@ -429,7 +429,8 @@ body {
 		width: 540px;
 	}
 	.user-image {
-		display: block;
+		display: flex;
+		justify-content: center;
 	}
 }
 
